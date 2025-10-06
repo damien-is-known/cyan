@@ -1,0 +1,392 @@
+*{
+    text-decoration:none;
+}
+@font-face {
+    font-family: 'VT323' ;
+    src: url("VT323-Regular.ttf")}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: VT323;
+    color: rgb(255, 255, 255);
+    background-image:url(background.jpg);
+    text-align: center;
+   
+}
+.yap{
+    background-color:#180813;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position:absolute;
+    top:500px;
+    left:50%;
+}
+.socials{
+    align-items: center;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+.socials a{
+    align-items: center;
+    position:center;
+    background-color: #2f0e24;
+    padding: 1em;
+    border-radius: 50%;}
+    
+.socials a svg{
+    height:25px;
+    fill:white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color:#180813;
+     box-sizing: border-box;
+    border-radius: 20px;
+}
+.profilepic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin:0px 10px 5px 0px 
+
+}
+
+
+.home{
+    background: #180813;
+    align-items: center;
+    justify-content: center;
+     box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+.stories{
+    position: absolute;
+  bottom: 10px;
+  top:900px; 
+   right: 200px; 
+    display:flex;
+    gap:20px;
+    width:800px;
+    height:400px;
+}
+.img {
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height:500px;
+    flex:1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7) saturate(0.2) contrast(1) blur(2px);
+    border-radius:20px;
+    transition:flex 0.3s, filter 0.3s;
+    overflow:hidden;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border:1px solid 
+}
+.img:hover{
+    flex:1.5;
+    filter:none;
+}
+.img span{
+    display:block;
+    width:50%;
+    height: 100%;
+    padding:10px;
+    font-size: 20px;
+    text-align:center;
+    color:white;
+    letter-spacing:1px;
+    font-weight:bold;
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+    transform:translateX(-50%);
+    transition: all 0.5s;
+    text-shadow:2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.img hover span{
+    bottom:20px;
+}
+.img1{ 
+    background-image:url(munji.jpg);
+}
+.img2{ 
+    background-image:url(yay.jpg) ;
+}
+.img3{ 
+    background-image: url(eikey.jpg);
+}
+.music {
+     width: 100%; 
+     height: 100%;
+      display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.music .card {
+    
+     position: relative;
+width: 500px;
+ height: 500px;
+  padding: 15px;
+background: linear-gradient(60deg,
+#151516 0%, #1d2229 100%);
+overflow: hidden;
+ margin-bottom: 15px;
+  border-radius: 20px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.music .card h2 { 
+    z-index: 99;
+position: absolute;
+bottom: 10px; 
+right: 130px; 
+font-size: 40px;
+ font-weight: 700;
+  color: #fff;
+pointer-events: none;
+transition: 0.2s ease; 
+text-shadow: 0 0 15px rgba (0, 0, 0, 0.5);
+}
+
+.music .card p {
+z-index: 99;
+position: absolute;
+bottom: 30px;
+right: 130px;
+width: 150px;
+color: #fff;
+opacity: 0;
+font-size: 18px;
+text-align: right;
+letter-spacing: 1px;
+transition: 0.2s ease;
+
+}
+.music .card span { z-index: 99;
+position: absolute;
+top: 60px;
+right: 35px; 
+color: #fff;
+ font-size: 12px; 
+ letter-spacing: 1px;
+  writing-mode:vertical-lr;
+   transition: 0.2s ease;
+opacity: 0.7;
+}
+.music .card .pic { 
+    z-index: 100;
+     width: 450px; 
+     height: 450px;
+      background-image: url(mcl.jpg);
+background-size: cover;
+ border-radius: 12px;
+filter: grayscale(100%);
+transition: 0.3s ease;
+}
+.music .card button{
+position: absolute;
+right: 30px;
+bottom: 40px;
+width: 40px;
+height:40px;
+background-color: #dd1111;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+outline: none;
+opacity: 1;
+transition: 0.3s ease;
+}
+.music .card:hover button { transform: scale(16.5);
+opacity: 0.5;
+}
+.music .card:hover h2 { bottom: 80px; right: 50px;
+}
+.music .card:hover p { opacity: 1; right: 60px;
+}
+.music .card:hover span { opacity: 0; top: 80px;
+}
+.music .card:hover .pic { 
+    filter: grayscale(0);
+width: 470px;
+}
+.music .card2 .pic {
+background-image: url(pig.jpg);
+transition: 0.3s ease;
+}
+.music .card2 button { background-color: #3ba919;
+}
+.music .card3 .pic {
+background-image: url(nine.jpg);
+transition: 0.3s ease;
+}
+.music .card3 button { background-color: #1abde6;
+}
+.music .card4 .pic {
+background-image: url(IMG.jpg);
+transition: 0.3s ease;
+}
+.music .card4 button { background-color: #2302ff;
+}
+.music .card5 .pic {
+background-image: url(IMG_2212.JPG);
+transition: 0.3s ease;
+}
+.music .card5 button { background-color: #f31098;
+}
+.artworks{
+    
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    height:250px;
+    gap:16px;
+    transition: 0.3s;
+}
+.artworks li{
+    position: relative;
+    overflow: hidden;
+    flex:0 0 80px;
+    border-radius: 50px;
+    cursor:pointer;
+    border-radius: 10px;
+    border:1.2px solid #52133d;
+    box-shadow:5px 10px 15px rgba(0, 0, 0, 0.4),
+    -2px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.artworks li img{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    translate: -50% -50%;
+    width:95%;
+    height:95%;
+    object-fit:cover;
+}
+.artworks li,
+.artworks li img{
+    transition: 0.3s;
+}
+.artworks li content{
+   transition:1.5s ease;
+
+}
+.artworks span{
+    text-align:center;
+    width:75% ;
+
+}
+
+.artworks h2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 4px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    color: #ffffff;
+}
+.artworks p{
+    color: white;
+    font-size: 10px;
+    width: 200%;
+}
+.artworks li .content{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 1;
+    color: white;
+    padding:15px;
+    background: linear-gradient(
+        0deg rgb(0 0 0 / 70%) 10%,
+        rbg(255 255 255/ 0%)
+    );
+    opacity: 0;
+    visibility:hidden;
+
+}
+.artworks:hover{
+    gap:0;
+}
+.artworks li .content span{
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 0px;
+    translate: -50%;
+    scale: 0.85;
+    visibility: hidden;
+    opacity: 0;
+}
+.artworks li:hover{
+    flex: 0 1 260px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+.artworks li img{
+
+}
+
+.artworks li:hover .content{
+    opacity: 1;
+    visibility: visible;
+}
+.artworks li:hover span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar{
+    position:sticky;
+    top:0px;
+    background-color:#180813;
+     font-family: VT323;
+     padding-right: 15px;
+     padding-left: 15px;
+      box-sizing: border-box;
+    border-radius: 20px;
+
+}
+.nardiv{
+    position:sticky;
+    top:0px;
+    display: flex;
+    justify-content:space-around;
+}
+.logo a{
+    font-size: 35px;
+    font-weight: 550;
+    color:white;
+
+}
+li{
+    list-style: none; 
+    display:inline-block;
+    position: sticky;
+}
+li a{
+    color: white; 
+    font-size: 18px;
+     font-weight:100 ;
+     margin-right: 25px;
+
+}
