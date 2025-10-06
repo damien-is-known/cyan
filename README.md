@@ -19,7 +19,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta nanme="viewpoint" content="width=device, initial-scale=1">
         <title>nagvigation bar</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylessheet" href="style.css">
 </head>
 <body>
     <header>
