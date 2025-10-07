@@ -19,7 +19,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta nanme="viewpoint" content="width=device, initial-scale=1">
         <title>nagvigation bar</title>
-        <link rel="stylessheet" href="style.css">
+        <link rel="stylessheet" href="https://github.com/damien-is-known/cyan/commit/45fa1e6dc73f2f708c9692773f71f1e0611596bd">
 </head>
 <body>
     <header>
